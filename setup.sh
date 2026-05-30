@@ -1,11 +1,9 @@
 #!/bin/bash
 set -e
 
-sudo pacman -S --noconfirm xorg-server lightdm lightdm-gtk-greeter openbox picom dmenu
-sudo systemctl enable lightdm
+pacman -S --noconfirm xorg-server lightdm lightdm-gtk-greeter openbox picom dmenu
+systemctl enable lightdm.service
 
-mkdir -p ~/.config/openbox
-cp -f rc.xml ~/.config/openbox/rc.xml
-cp -f autostart ~./config/openbox/autostart
-
-sudo cp -f lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
+cp -f autostart /etc/xdg/openbox/autostart
+cp -f rc.xml /etc/xdg/openbox/rc.xml
+cp -f lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
