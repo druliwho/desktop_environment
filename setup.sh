@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-sudo pacman -S --noconfirm xorg lightdm lightdm-gtk-greeter openbox picom dmenu
+sudo pacman -S --noconfirm xorg-server lightdm lightdm-gtk-greeter openbox picom dmenu
 sudo systemctl enable lightdm
 
 mkdir -p ~/.config/openbox
