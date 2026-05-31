@@ -3,7 +3,7 @@ set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-pacman -S --noconfirm xorg-server lightdm lightdm-gtk-greeter openbox picom dmenu
+pacman -S --noconfirm xorg-server lightdm lightdm-gtk-greeter openbox picom dmenu alacritty
 systemctl enable lightdm.service
 
 cp -f autostart /etc/xdg/openbox/autostart
