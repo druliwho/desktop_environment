@@ -299,13 +299,20 @@
   </keybind>
 
   <!-- Keybindings for running applications -->
+<!--
   <keybind key="W-e">
     <action name="Execute">
       <startupnotify>
         <enabled>true</enabled>
-        <name>dmenu_run</name>
+        <name>Konqueror</name>
       </startupnotify>
-      <command>dmenu_run</command>
+      <command>kfmclient openProfile filemanagement</command>
+    </action>
+  </keybind>
+-->
+  <keybind key="W-space">
+    <action name="Execute">
+     <command>dmenu_run</command>
     </action>
   </keybind>
 </keyboard>
@@ -594,8 +601,8 @@
     <!-- Menus -->
     <mousebind button="Middle" action="Press">
       <action name="ShowMenu"><menu>client-list-combined-menu</menu></action>
-    </mousebind> 
-<!--
+    </mousebind>
+<!-- 
     <mousebind button="Right" action="Press">
       <action name="ShowMenu"><menu>root-menu</menu></action>
     </mousebind>
